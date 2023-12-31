@@ -10,8 +10,7 @@ function MyMapComponent (props) {
   const [latLng, setLatLng] = useState(null);
 
   useEffect(() => {
-    // fetch(`http://localhost:5000/api/resolve-map-url?url=${props.mapUrl}`)
-    fetch(`https://rest-countries-api-frontend.vercel.app/api/resolve-map-url?url=${props.mapUrl}`)
+    fetch(`http://localhost:5000/api/resolve-map-url?url=${props.mapUrl}`)
         .then(response => response.json())
         .then(data => setLatLng(data))
         .catch(error => console.error('Error:', error));
@@ -30,6 +29,7 @@ function MyMapComponent (props) {
 }
 
 export default MyMapComponent;
+
 // npm install --force --save @react-google-maps/api
 // 'AIzaSyDA-IwlortvMyFA8lH9_kQOdbhj1aBNCHM'
-// 'AIzaSyAlqrv7wVOdkifjOOqKrTEIAsso8yAoe0U'
+// AIzaSyAlqrv7wVOdkifjOOqKrTEIAsso8yAoe0U
