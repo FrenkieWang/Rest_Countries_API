@@ -32,4 +32,4 @@ function MyMapComponent (props) {
 export default MyMapComponent;
 // npm install --force --save @react-google-maps/api
 // 'AIzaSyDA-IwlortvMyFA8lH9_kQOdbhj1aBNCHM'
-// AIzaSyAlqrv7wVOdkifjOOqKrTEIAsso8yAoe0U
+// 'AIzaSyAlqrv7wVOdkifjOOqKrTEIAsso8yAoe0U'
