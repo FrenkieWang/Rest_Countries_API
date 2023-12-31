@@ -15,6 +15,16 @@ function HomePage(){
         })
         .catch(error => console.error('Error fetching data:', error));
     }, []);
+
+    function sortCountryNameAsc(countryA, countryB) {
+      let comparison = 0;
+  
+      if (countryA.name.common < countryB.name.common) comparison = -1;
+      else if (countryA.name.common > countryB.name.common) comparison = 1;
+      else comparison = 0;
+  
+      return comparison;
+    }
     
     function countryFilterFunction(searchTerm) {
       return function (countryObject) {
@@ -50,8 +60,10 @@ function HomePage(){
         </select>      
   
         <div style={styles.container}>
-          {data.filter(countryFilterFunction(searchTerm)).map((item, index) => 
-            <LinkCard key={index} data={item} />
+          {data.filter(countryFilterFunction(searchTerm))
+            .sort(sortCountryNameAsc)
+            .map((item, index) => 
+              <LinkCard key={index} data={item} />
           )}
         </div>
       </div>
