@@ -1,12 +1,7 @@
-// Card.js
 import React from 'react';
-import './styles.css';
-import { BrowserRouter as
-    Router, Routes, Route, Link } from "react-router-dom";
-    import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { Link } from "react-router-dom";
 
-function Brief({ data }) {
-
+function LinkCard({ data }) {
   return (
     <div style={styles.card}>
       <br/><Link to= {`/country/${data.name.common}`}>{data.name.common}</Link>     
@@ -25,4 +20,4 @@ const styles = {
   }
 };
 
-export default Brief;
+export default LinkCard;

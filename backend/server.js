@@ -1,8 +1,8 @@
 const express = require('express');
 const request = require('request');
-const app = express();
-
 const cors = require('cors');
+
+const app = express();
 app.use(cors());
 
 app.get('/api/resolve-map-url/', (req, res) => {
