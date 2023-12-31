@@ -48,7 +48,7 @@ function HomePage(){
         <h3>Type your search keyword here: </h3>
         <input onChange={(e) => setSearchTerm(e.target.value)} type="text" />
 
-        <h3>Select the Countinent</h3>  
+        <h3>Select the Continent</h3>  
         <select value={selectedContinent} onChange={(e) => setSelectedContinent(e.target.value)}>
           <option value="">All</option>
           <option value="Europe">Europe</option>
