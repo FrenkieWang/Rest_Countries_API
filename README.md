@@ -1,14 +1,21 @@
 # Getting started with the Rest Countries API
 
-This project was made with React, NodeJS and Express JS.
+This full-stack project was made with React, NodeJS and Express JS.
 
-There are 2 parts in this program.
+This program can display the basic information of all the countries in the world, 
+including common names, capitals, areas, populations, and google Map locations.
+
+I have deployed the project in https://rest-countries-api-frontend.vercel.app/
+
+Have fun!
 
 ### Backend - NodeJS and ExpressJS
 
 In this part, we put google Map shortUrl into the Google Map API,
 
 then the database of Google Map will decode the URL and return the location.
+
+I have deployed the backend part in https://rest-countries-api-backend.vercel.app/
 
 ### Frontend - React
 
