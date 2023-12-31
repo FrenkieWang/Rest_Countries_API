@@ -10,7 +10,8 @@ function MyMapComponent (props) {
   const [latLng, setLatLng] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/resolve-map-url?url=${props.mapUrl}`)
+    // fetch(`http://localhost:5000/api/resolve-map-url?url=${props.mapUrl}`)
+    fetch(`https://rest-countries-api-frontend.vercel.app/api/resolve-map-url?url=${props.mapUrl}`)
         .then(response => response.json())
         .then(data => setLatLng(data))
         .catch(error => console.error('Error:', error));
