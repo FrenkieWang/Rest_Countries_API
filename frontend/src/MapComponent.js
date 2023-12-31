@@ -30,6 +30,8 @@ function MyMapComponent (props) {
 
 export default MyMapComponent;
 
+// 'AIzaSyAlqrv7wVOdkifjOOqKrTEIAsso8yAoe0U'
 // npm install --force --save @react-google-maps/api
-// 'AIzaSyDA-IwlortvMyFA8lH9_kQOdbhj1aBNCHM'
-// AIzaSyAlqrv7wVOdkifjOOqKrTEIAsso8yAoe0U
+// fetch(`http://localhost:5000/api/resolve-map-url?url=${props.mapUrl}`)
+// Change [localhost:5000] into [deployed backend server]
+// Backend Server" rest-countries-api-backend.vercel.app
