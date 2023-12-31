@@ -9,13 +9,13 @@ function CountryInfo({}) {
   let { name } = useParams(); 
   const URL = `https://restcountries.com/v3.1/name/${name}`;
 
-  const [countryObject, setCountryObject] = useState({});
+  const [countries, setCountries] = useState([]);
 
   useEffect(() => {
     axios.get(URL) 
       .then(response => {
         console.log(response.data, "response data");
-        setCountryObject(response.data[0]);
+        setCountries(response.data);
       })
       .catch(error => console.error('Error fetching data:', error));
   }, [URL]);
@@ -24,16 +24,18 @@ function CountryInfo({}) {
     <div style={styles.card}>
       <h1>Country: {name}</h1>
 
-      {countryObject.name &&
-        <div>
-          <p>Common Name: <span className="red-bold-text">{countryObject.name.common}</span></p> 
-          <p>Official Name: <span className="red-bold-text">{countryObject.name.official}</span></p>  
-          <p>Capital: <span className="red-bold-text">{countryObject.capital}</span></p>
-          <p>Region: <span className="red-bold-text">{countryObject.region}</span></p>      
-          <p>Area: <span className="red-bold-text">{countryObject.area} km&sup2;</span></p>  
-          <p>Population: <span className="red-bold-text">{countryObject.population}</span></p>  
-          <MapComponent apiKey="AIzaSyDA-IwlortvMyFA8lH9_kQOdbhj1aBNCHM" mapUrl={countryObject.maps.googleMaps} />  
-        </div>
+      { countries.length !== 0 &&
+        countries.map((countryObject, index) => 
+          <div key={index}>            
+            <p>Common Name: <span className="red-bold-text">{countryObject.name.common}</span></p> 
+            <p>Official Name: <span className="red-bold-text">{countryObject.name.official}</span></p>  
+            <p>Capital: <span className="red-bold-text">{countryObject.capital}</span></p>
+            <p>Region: <span className="red-bold-text">{countryObject.region}</span></p>      
+            <p>Area: <span className="red-bold-text">{countryObject.area} km&sup2;</span></p>  
+            <p>Population: <span className="red-bold-text">{countryObject.population}</span></p>  
+            <MapComponent apiKey="AIzaSyDA-IwlortvMyFA8lH9_kQOdbhj1aBNCHM" mapUrl={countryObject.maps.googleMaps} />  
+          </div>
+        )
       }     
       <br/><Link to= {`/`}>Go Back to HomePage</Link>  
 
