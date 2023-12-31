@@ -18,7 +18,7 @@ function MyMapComponent (props) {
 
   
   return(
-    <LoadScriptNext googleMapsApiKey="AIzaSyDA-IwlortvMyFA8lH9_kQOdbhj1aBNCHM">
+    <LoadScriptNext googleMapsApiKey={"AIzaSyDA-IwlortvMyFA8lH9_kQOdbhj1aBNCHM"}>
       {latLng && (
         <GoogleMap mapContainerStyle={containerStyle} center={latLng} zoom={5}>
           <Marker position={latLng} />
