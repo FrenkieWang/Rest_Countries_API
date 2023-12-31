@@ -31,8 +31,8 @@ function HomePage(){
       <div>
         <h1>Bonuce Insights Challenge</h1>
         <h3> 
-          Search Keyword:  {searchTerm} &nbsp;&nbsp;
-          Selected Option:  {selectedContinent}
+          Search Keyword:  <span style = {{color:'blue'}}>&nbsp;&nbsp;{searchTerm}</span>
+          Selected Option:  <span style = {{color:'blue'}}>{selectedContinent}</span>
         </h3>
   
         <h3>Type your search keyword here: </h3>
