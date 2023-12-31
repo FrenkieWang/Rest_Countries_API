@@ -17,12 +17,12 @@ then the database of Google Map will decode the URL and return the location.
 In this part, we fetch the countries API from  https://restcountries.com/v3.1/all. 
 Put all the countries data in Array, then use map function to render each country.
 
-#### Brief.js
+#### LinkCarde.js
 First, we get the Link of every countries's name.
 
 After we click the link, you can see the countries details.
 
-#### Card.js
+#### CountryInfo.js
 
 In this Components, we can see all the countries details putting into a Card.
 
@@ -45,7 +45,7 @@ This Components is used to connect with Backend, we get the location from backen
 
 4) Open integrated terminal of frontend
 
-5) then type "npm install"
+5) then type "npm install --force"
 
 6) then type "npm start"
 
