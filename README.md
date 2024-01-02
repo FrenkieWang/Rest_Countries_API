@@ -24,7 +24,7 @@ I have deployed the backend part in https://rest-countries-api-backend.vercel.ap
 In this part, we fetch the countries API from  https://restcountries.com/v3.1/all. 
 Put all the countries data in Array, then use map function to render each country.
 
-#### LinkCarde.js
+#### LinkCard.js
 First, we get the Link of every countries's name.
 
 After we click the link, you can see the countries details.
