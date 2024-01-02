@@ -9,6 +9,8 @@ I have deployed the project in https://rest-countries-api-frontend.vercel.app/
 
 Have fun!
 
+![My Image](/Project Architecture.png "This is my image")
+
 ### Backend - NodeJS and ExpressJS
 
 In this part, we put google Map shortUrl into the Google Map API,

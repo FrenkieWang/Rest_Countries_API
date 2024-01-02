@@ -27,12 +27,12 @@ function CountryInfo({}) {
       { countries.length !== 0 &&
         countries.map((countryObject, index) => 
           <div key={index}>            
-            <p>Common Name: <span className="red-bold-text">{countryObject.name.common}</span></p> 
-            <p>Official Name: <span className="red-bold-text">{countryObject.name.official}</span></p>  
-            <p>Capital: <span className="red-bold-text">{countryObject.capital}</span></p>
-            <p>Region: <span className="red-bold-text">{countryObject.region}</span></p>      
-            <p>Area: <span className="red-bold-text">{countryObject.area} km&sup2;</span></p>  
-            <p>Population: <span className="red-bold-text">{countryObject.population}</span></p>  
+            <p>Common Name: <span style={TextStyle}>{countryObject.name.common}</span></p> 
+            <p>Official Name: <span style={TextStyle}>{countryObject.name.official}</span></p>  
+            <p>Capital: <span style={TextStyle}>{countryObject.capital}</span></p>
+            <p>Region: <span style={TextStyle}>{countryObject.region}</span></p>      
+            <p>Area: <span style={TextStyle}>{countryObject.area} km&sup2;</span></p>  
+            <p>Population: <span style={TextStyle}>{countryObject.population}</span></p>  
             <MapComponent apiKey="AIzaSyDA-IwlortvMyFA8lH9_kQOdbhj1aBNCHM" mapUrl={countryObject.maps.googleMaps} />  
           </div>
         )
@@ -42,6 +42,11 @@ function CountryInfo({}) {
     </div>
   );
 }
+
+const TextStyle = {
+  fontWeight: 'bold',
+  color : 'blue'
+};
 
 const styles = {
   card: {
