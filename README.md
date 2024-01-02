@@ -9,7 +9,7 @@ I have deployed the project in https://rest-countries-api-frontend.vercel.app/
 
 Have fun!
 
-![Project Architecture](images/Project Architecture.png)
+![Project Architecture](images/Project_Architecture.png)
 
 ### Backend - NodeJS and ExpressJS
 
