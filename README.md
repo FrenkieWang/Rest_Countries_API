@@ -9,7 +9,7 @@ I have deployed the project in https://rest-countries-api-frontend.vercel.app/
 
 Have fun!
 
-![My Image](/Project Architecture.png "This is my image")
+![Project Architecture](images/Project Architecture.png)
 
 ### Backend - NodeJS and ExpressJS
 
