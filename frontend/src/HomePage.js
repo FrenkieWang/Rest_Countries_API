@@ -45,7 +45,7 @@ function HomePage(){
     function FilterCountriesByLetter(selectedLetter){
       return function (countryObject) {
         if(selectedLetter === ''){
-          return countryObject;
+          return true;
         } 
         else{
           return countryObject.name.common
