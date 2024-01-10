@@ -9,9 +9,10 @@ I have deployed the project in https://rest-countries-api-frontend.vercel.app/
 
 Have fun!
 
+## Project Architecture
+
 ![Project Architecture](images/Project_Architecture.png)
 
-That is the User Interface, have a preview: 
 
 ## Home Page
 ![Home Page](images/user_interface_home.png)
