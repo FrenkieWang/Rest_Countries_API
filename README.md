@@ -11,6 +11,14 @@ Have fun!
 
 ![Project Architecture](images/Project_Architecture.png)
 
+That is the User Interface, have a preview: 
+
+#### Home Page
+(images/user_interface_home.png)
+
+#### Country Example - China
+(images/user_interface_country.png)
+
 ### Backend - NodeJS and ExpressJS
 
 In this part, we put google Map shortUrl into the Google Map API,

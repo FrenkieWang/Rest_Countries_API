@@ -57,7 +57,7 @@ function HomePage(){
   
     return(
       <div>
-        <h1>Bonuce Insights Challenge</h1>
+        <h1>Rest Countries API - Frenkie Wang</h1>
         <h3> 
           Search Keyword: <span style = {{color:'blue'}}>&nbsp;{searchTerm}&nbsp;</span>
           Selected Option: <span style = {{color:'blue'}}>&nbsp;{selectedContinent}&nbsp;</span>
