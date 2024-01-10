@@ -13,10 +13,10 @@ Have fun!
 
 That is the User Interface, have a preview: 
 
-#### Home Page
+## Home Page
 ![Home Page](images/user_interface_home.png)
 
-#### Country Detail Page - China
+## Country Detail Page - China
 ![Country Detail Page](images/user_interface_country.png)
 
 ### Backend - NodeJS and ExpressJS
